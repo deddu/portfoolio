@@ -4,32 +4,46 @@ angular.module('portfoolioApp')
   .controller 'KnowhowCtrl', ($scope, SkillsService) ->
     $scope.range = (x) ->
       return new Array(x)
-    Array::unique = ->
+    unique = (a) ->
       output = {}
-      output[@[key]] = @[key] for key in [0...@length]
+      output[a[key]] = a[key] for key in [0...a.length]
       value for key, value of output
 
 
-    $scope.selected = []
-    $scope.fils = []
+    $scope.catselected = []
+    $scope.typeselected =[]
+    $scope.fields = []
+
     SkillsService.query((data,err)->
       $scope.skills = data
-
-      for a in data
-        if a['category'] not in $scope.fils
-          $scope.fils.push(a['category'])
-      $scope.selected = (x for x in $scope.fils)
+      $scope.fields = ({category:x.category,type:x.type} for x in data)
+      $scope.catfields = unique(x.category for x in $scope.fields)
+      $scope.typefields = unique(x.type for x in $scope.fields)
+      $scope.catselected = unique(x.category for x in $scope.fields)
+      $scope.typeselected = unique(x.type for x in $scope.fields)
     )
-    $scope.is_selected =  (el) ->
-      return if el in $scope.selected then "active" else ""
 
-    $scope.toggle_selected =  (el) ->
-      if el in $scope.selected
-        console.log 'removing ' +el
-        $scope.selected.splice($scope.selected.indexOf(el),1)
+    $scope.is_selected =  (el,arr) ->
+      #console.log el,arr
+      return if el in arr then "active" else ""
+
+    $scope.toggle_selected =  (el,arr) ->
+      #console.log el,arr
+      if el in arr
+        arr.splice(arr.indexOf(el),1)
       else
-        console.log 'adding ' +el
-        $scope.selected.push(el)
+       # console.log 'adding ' +el
+        arr.push(el)
 
-    $scope.matchCategory = (el) ->
-      return if el.category in $scope.selected then true else false
+    $scope.getColor = (typ) ->
+      col = Math.floor($scope.typefields.indexOf(typ)*255/$scope.typefields.length)
+      return "rgba(123,123,#{col},1)"
+
+
+
+
+    $scope.matchCategory = (stuff) ->
+      return if stuff.category in $scope.catselected then true else false
+
+    $scope.matchType = (stuff) ->
+      return if stuff.type in $scope.typeselected then true else false
