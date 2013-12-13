@@ -6,6 +6,42 @@
         "description":"I know my way around"
     },
     {
+        "name":"Scala",
+        "level":1,
+        "category":"code",
+        "description":"I know my way around"
+    },
+    {
+        "name":"Haskell",
+        "level":1,
+        "category":"code",
+        "description":"I know my way around"
+    },
+    {
+        "name":"C",
+        "level":3,
+        "category":"code",
+        "description":"I know my way around"
+    },
+    {
+        "name":"C++",
+        "level":1,
+        "category":"code",
+        "description":"I know my way around"
+    },
+    {
+        "name":"Matlab",
+        "level":2,
+        "category":"code",
+        "description":"I know my way around"
+    },
+    {
+        "name":"Fortran",
+        "level":1,
+        "category":"code",
+        "description":"I know my way around"
+    },
+    {
         "name":"Node.js",
         "level":3,
         "category":"code",
@@ -78,6 +114,13 @@
     {
         "name":"MongoDB",
         "level":3,
+        "category":"code",
+        "type":"db",
+        "description":""
+    },
+    {
+        "name":"Neo4J",
+        "level":2,
         "category":"code",
         "type":"db",
         "description":""
