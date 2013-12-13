@@ -1,7 +1,7 @@
 'use strict'
 
 c = angular.module('portfoolioApp')
-c.controller 'MainCtrl', ($scope, Shops) ->
+c.controller 'MainCtrl', ($scope, ShopsService) ->
     $scope.choose = (arr) ->
       return arr[Math.floor(Math.random()*arr.length)]
     $scope.prev = (arr, el) ->
@@ -10,7 +10,7 @@ c.controller 'MainCtrl', ($scope, Shops) ->
       return arr[((arr.indexOf(el)+1)+arr.length)%arr.length]
     loading = true
 
-    Shops.query( (data, err) ->
+    ShopsService.query( (data, err) ->
       $scope.shops = data
       loading = false
     )

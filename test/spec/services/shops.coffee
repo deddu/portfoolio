@@ -3,7 +3,7 @@
 describe 'Service: Shops', () ->
 
   # load the service's module
-  beforeEach module 'ChristmasrouletteApp'
+  beforeEach module 'portfoolioApp'
 
   # instantiate service
   Shops = {}
