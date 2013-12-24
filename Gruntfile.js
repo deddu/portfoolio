@@ -230,7 +230,7 @@ module.exports = function (grunt) {
             'bower_components/**/*',
             'images/{,*/}*.{gif,webp}',
             'styles/fonts/*',
-            'data/shops.json'
+            'data/*.json'
           ]
         }, {
           expand: true,
@@ -331,7 +331,7 @@ module.exports = function (grunt) {
     'cssmin',
     'uglify',
 //    'rev',
-    'usemin'
+    //'usemin'
   ]);
 
   grunt.registerTask('default', [
