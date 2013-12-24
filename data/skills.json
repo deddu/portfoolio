@@ -1,0 +1,257 @@
+[
+    {
+        "name":"Python",
+        "level":4,
+        "category":"code",
+        "type":"Programming Language",
+        "description":"I know my way around"
+    },
+    {
+        "name":"Scala",
+        "level":1,
+        "category":"code",
+        "type":"Programming Language",
+        "description":"I know my way around"
+    },
+    {
+        "name":"Haskell",
+        "level":1,
+        "category":"code",
+        "type":"Programming Language",
+        "description":"I know my way around"
+    },
+    {
+        "name":"C",
+        "level":3,
+        "category":"code",
+        "type":"Programming Language",
+        "description":"I know my way around"
+    },
+    {
+        "name":"C++",
+        "level":1,
+        "category":"code",
+        "type":"Programming Language",
+        "description":"I know my way around"
+    },
+    {
+        "name":"Matlab",
+        "level":2,
+        "category":"code",
+        "type":"Programming Language",
+        "description":"I know my way around"
+    },
+    {
+        "name":"Fortran",
+        "level":1,
+        "category":"code",
+        "type":"Programming Language",
+        "description":"I know my way around"
+    },
+    {
+        "name":"Node.js",
+        "level":3,
+        "category":"code",
+        "type":"Programming Language",
+        "description":"Working with it"
+    },
+    {
+        "name":"CSS3",
+        "level":3,
+        "category":"code",
+        "type":"Programming Language",
+        "description":""
+    },
+    {
+        "name":"HTML5",
+        "level":4,
+        "category":"code",
+        "type":"Programming Language",
+        "description":""
+    },
+    {
+        "name":"Angular.js",
+        "level":3,
+        "category":"code",
+        "type":"JS framework",
+        "description":""
+    },
+    {
+        "name":"Bootstrap",
+        "level":3,
+        "category":"code",
+        "type":"CSS framework",
+        "description":""
+    },
+    {
+        "name":"Foundation",
+        "level":2,
+        "category":"code",
+        "type":"CSS framework",
+        "description":""
+    },
+    {
+        "name":"Backbone.js",
+        "level":3,
+        "type":"JS framework",
+        "category":"code",
+        "description":""
+    },
+    {
+        "name":"CoffeeScript",
+        "level":3,
+        "category":"code",
+        "type":"Programming Language",
+        "description":""
+    },
+    {
+        "name":"Javascript",
+        "level":3,
+        "category":"code",
+        "type":"Programming Language",
+        "description":""
+    },
+    {
+        "name":"Java",
+        "level":3,
+        "category":"code",
+        "type":"Programming Language",
+        "description":""
+    },
+    {
+        "name":"Groovy",
+        "level":1,
+        "category":"code",
+        "type":"Programming Language",
+        "description":""
+    },
+    {
+        "name":"MongoDB",
+        "level":3,
+        "category":"code",
+        "type":"db",
+        "description":""
+    },
+    {
+        "name":"Neo4J",
+        "level":2,
+        "category":"code",
+        "type":"db",
+        "description":""
+    },
+    {
+        "name":"SQL",
+        "level":1,
+        "category":"code",
+        "type":"db",
+        "description":""
+    },
+    {
+        "name":"jQuery",
+        "level":2,
+        "category":"code",
+        "type":"library",
+        "description":""
+    },
+    {
+        "name":"SASS",
+        "level":2,
+        "category":"code",
+        "type":"CSS",
+        "description":""
+    },
+    {
+        "name":"Machine Learning",
+        "level":2,
+        "category":"science",
+        "type":"Science",
+        "description":""
+    },
+    {
+        "name":"Scanning Tunneling Microscopy",
+        "level":4,
+        "category":"science",
+        "type":"Science",
+        "description":""
+    },
+    {
+        "name":"Molecular Dynamics",
+        "level":3,
+        "category":"science",
+        "type":"Science",
+        "description":""
+    },
+    {
+        "name":"Monte Carlo",
+        "level":2,
+        "category":"science",
+        "type":"Science",
+        "description":""
+    },
+    {
+        "name":"Density Functional Theory",
+        "level":2,
+        "category":"science",
+        "type":"Science",
+        "description":""
+    },
+    {
+        "name":"Organic Chemistry",
+        "level":2,
+        "category":"science",
+        "type":"Science",
+        "description":""
+    },
+    {
+        "name":"Physical Chemistry",
+        "level":4,
+        "category":"science",
+        "type":"Science",
+        "description":""
+    },
+    {
+        "name":"Material Science",
+        "level":4,
+        "category":"science",
+        "type":"Science",
+        "description":""
+    },
+    {
+        "name":"Nanotechnology",
+        "level":3,
+        "category":"science",
+        "type":"Science",
+        "description":""
+    },
+    {
+        "name":"English",
+        "level":4,
+        "category":"language",
+        "type":"Language",
+        "description":""
+    },
+    {
+        "name":"Spanish",
+        "level":4,
+        "category":"language",
+        "type":"Language",
+        "description":""
+    },
+    {
+        "name":"French",
+        "level":4,
+        "category":"language",
+        "type":"Language",
+        "description":""
+    },
+    {
+        "name":"Italian",
+        "level":5,
+        "category":"language",
+        "type":"Language",
+        "description":""
+    }
+
+
+
+]

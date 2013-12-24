@@ -13,7 +13,9 @@
       <link rel="stylesheet" href="bower_components/foundation/css/normalize.css">
       <link rel="stylesheet" href="bower_components/foundation/css/foundation.css">
       <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+        <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
 
 </head>
   <body ng-app="portfoolioApp">
@@ -48,9 +50,20 @@
     <!--<script>-->
         <!--$(document).foundation();-->
     <!--</script>-->
-        <script src="scripts/modules.js"></script>
+        <!-- build:js scripts/modules.js -->
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular-resource.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular-cookies.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular-sanitize.min.js"></script>
+        <!-- endbuild -->
 
-        <script src="scripts/scripts.js"></script>
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+
+        <script src="scripts/services/shops.js"></script>
+        <script src="scripts/services/skills.js"></script>
+        <script src="scripts/controllers/knowhow.js"></script>
+        <!-- endbuild -->
 
 </body>
 </html>
