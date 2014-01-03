@@ -228,7 +228,7 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             '.htaccess',
             'bower_components/**/*',
-            'images/{,*/}*.{gif,webp}',
+            'images/{,*/}*.{gif,png,webp}',
             'styles/fonts/*',
             'data/*.json'
           ]
@@ -331,11 +331,11 @@ module.exports = function (grunt) {
     'cssmin',
     'uglify',
 //    'rev',
-    //'usemin'
+    'usemin'
   ]);
 
   grunt.registerTask('default', [
-    'jshint',
+//    'jshint',
 //    'test',
     'build'
   ]);
