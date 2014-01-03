@@ -2,6 +2,6 @@
 
 angular.module('shopsService', ['ngResource'])
 .factory('ShopsService', ($resource) ->
-  return $resource('/data/shops.json');
+  return $resource('./data/shops.json');
   )
 

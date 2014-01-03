@@ -10,11 +10,17 @@ angular.module('portfoolioApp', [
   .config ($routeProvider) ->
     $routeProvider
       .when '/',
-        templateUrl: 'views/main.html'
-        controller: 'MainCtrl'
+        templateUrl: 'views/landing.html'
+        controller: 'LandingCtrl'
+      .when '/portfolio',
+          templateUrl: 'views/main.html',
+          controller: 'MainCtrl'
       .when '/knowhow',
         templateUrl: 'views/knowhow.html',
         controller: 'KnowhowCtrl'
+      .when '/landing',
+        templateUrl: 'views/landing.html',
+        controller: 'LandingCtrl'
       .otherwise
         redirectTo: '/'
   .run( ($rootScope) ->

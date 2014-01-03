@@ -2,6 +2,6 @@
 
 angular.module('skillsService', ['ngResource'])
 .factory('SkillsService', ($resource) ->
-    return $resource('/data/skills.json');
+    return $resource('./data/skills.json');
   )
 
