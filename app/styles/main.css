@@ -33,18 +33,30 @@ body{
 .shoplist-header{
     margin-left: 10%;
 }
-footer{
-    font-size: 12px;
-    text-align: center;
-    color: blanchedalmond;
-}
-footer a {
-    text-decoration: none;
-    color: blanchedalmond;
-}
+
 .landing{
     padding: 5%;
 }
 .landing h1{
     font-size: 6em;
+}
+@media all and (max-width: 320px)  {
+    .landing h1{
+        font-size: 3em;
+    }
+}
+.main-footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #000000;
+    background-color: #eee;
+    padding: 5px 0px;
+}
+footer{
+    font-size: 12px;
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
 }

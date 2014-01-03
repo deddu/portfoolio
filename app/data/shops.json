@@ -15,7 +15,7 @@
         "name":"Dthrees",
         "url":"http://deddu.github.io/dthrees/dthrees.html#",
         "thumbnail":"../images/dthrees.png",
-        "description":"Gererate random trees with d3js"
+        "description":"Generate random trees with d3js"
     },
     {
         "name":"ChristmasRoulette",
