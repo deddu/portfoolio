@@ -13,9 +13,7 @@
       <link rel="stylesheet" href="bower_components/foundation/css/normalize.css">
       <link rel="stylesheet" href="bower_components/foundation/css/foundation.css">
       <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-        <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
-        <!-- endbuild -->
 
 </head>
   <body ng-app="portfoolioApp">
@@ -29,8 +27,31 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container" ng-view=""></div>
+    <nav class="top-bar" data-topbar="">
+        <ul class="title-area">
+            <li class="name">
+                <h1><a href="#">Dedd.us</a></h1>
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
 
+        <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+                <li><a href="mailto:cadedduan@gmail.com"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+
+            <!-- Left Nav Section -->
+            <ul class="left">
+                <li><a href="/#/portfolio">Portfolio</a></li>
+                <li><a href="/#/knowhow">Skills</a></li>
+                <!--<li><a href="/#/publications">Publications</a></li>-->
+                <li><a href="http://www.dedd.us">Blog</a></li>
+            </ul>
+        </section>
+    </nav>
+    <div class="container" ng-view=""></div>
+    <footer class="main-footer"> by <a href="http://www.dedd.us"> Deddu </a> 2013, background-image by Yao Cheng </footer>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -50,20 +71,9 @@
     <!--<script>-->
         <!--$(document).foundation();-->
     <!--</script>-->
-        <!-- build:js scripts/modules.js -->
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular-resource.min.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular-cookies.min.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular-sanitize.min.js"></script>
-        <!-- endbuild -->
+        <script src="scripts/modules.js"></script>
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-
-        <script src="scripts/services/shops.js"></script>
-        <script src="scripts/services/skills.js"></script>
-        <script src="scripts/controllers/knowhow.js"></script>
-        <!-- endbuild -->
+        <script src="scripts/scripts.js"></script>
 
 </body>
 </html>
