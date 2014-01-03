@@ -11,7 +11,7 @@ angular.module('portfoolioApp', [
     $routeProvider
       .when '/',
         templateUrl: 'views/landing.html'
-        controller: 'LandingCtrl'
+        controller: 'MainCtrl'
       .when '/portfolio',
           templateUrl: 'views/main.html',
           controller: 'MainCtrl'
