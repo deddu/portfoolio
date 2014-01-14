@@ -1,7 +1,7 @@
 'use strict'
 
 angular.module('portfoolioApp')
-  .controller 'KnowhowCtrl', ($scope, SkillsService) ->
+  .controller 'KnowhowCtrl', ($scope,SkillsService) ->
     $scope.range = (x) ->
       return new Array(x)
     unique = (a) ->
@@ -47,3 +47,12 @@ angular.module('portfoolioApp')
 
     $scope.matchType = (stuff) ->
       return if stuff.type in $scope.typeselected then true else false
+
+
+    $scope.knobOptions = {
+      'width':100,
+      'height':100,
+      "fgColor":"rgb(53,121,164)",
+      'displayInput': true,
+      'readOnly':true
+    }

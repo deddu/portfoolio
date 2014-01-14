@@ -1,6 +1,7 @@
 'use strict'
 
 angular.module('portfoolioApp', [
+  'ui.knob',
   'ngCookies',
   'ngResource',
   'ngSanitize',

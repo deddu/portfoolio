@@ -60,3 +60,21 @@ footer{
 footer a {
     text-decoration: none;
 }
+.cv {
+    /*background-image: url("../images/cv-01.png");*/
+    /*background-repeat:no-repeat;*/
+    /*background-position: left top;*/
+    /*background-size: contain;*/
+    padding-bottom: 20px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.5);
+    text-align: center;
+    margin-top: -40px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+.btns, .contact{
+    text-align: center;
+}
