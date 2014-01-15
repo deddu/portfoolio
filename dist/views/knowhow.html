@@ -1,4 +1,5 @@
 <section>
+
     <div class="shoplist">
         <dl class="sub-nav">
             <dt>Field: </dt>
@@ -8,9 +9,12 @@
             <dt>Category: </dt>
             <dd ng-repeat="fil in typefields" ng-class="is_selected(fil,typeselected)"><a ng-click="toggle_selected(fil,typeselected)">{{fil}}</a></dd>
         </dl>
+
         <ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-8">
             <li ng-repeat="skill in skills|filter:matchCategory|filter:matchType" class="shop">
-                    <p><span ng-repeat="i in range(skill.level)"><i class="fa fa-star" ng-style="{color:getColor(skill.type)}"></i></span></p>
+                <knob value="{{skill.level}}" knob-data="{{skill.level}}" knob-max="10" knob-options="knobOptions"></knob>
+                    <!--<p><span ng-repeat="i in range(skill.level)"><i class="fa fa-star" ng-style="{color:getColor(skill.type)}"></i></span></p>-->
+
                     <span class="button secondary small">{{skill.name}}</span>
             </li>
         </ul>
