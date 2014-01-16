@@ -1,8 +1,8 @@
 
 
 body{
-    background-image: url('../images/bg.jpg');
-    background-size: cover;
+    background-image: url('../images/cubes.png');
+    /*background-size: cover;*/
 }
 .shoplist{
     padding: 20px;
@@ -40,13 +40,9 @@ body{
 .landing h1{
     font-size: 6em;
 }
-@media all and (max-width: 320px)  {
-    .landing h1{
-        font-size: 3em;
-    }
-}
+
 .main-footer{
-    position: fixed;
+    /*position: fixed;*/
     bottom: 0;
     width: 100%;
     color: #000000;
@@ -59,6 +55,10 @@ footer{
 }
 footer a {
     text-decoration: none;
+}
+.main p{
+    font-family: "Bookman", Georgia, "Times New Roman", serif;
+    font-size: 1.5rem;
 }
 .cv {
     /*background-image: url("../images/cv-01.png");*/
@@ -75,6 +75,43 @@ footer a {
     margin-bottom: 20px;
     border-radius: 30px;
 }
+.landing-buttons{
+    /*background-color: lightgray;*/
+    /*background-image: url("../images/project_papper.png");*/
+    /*opacity: 0.5;*/
+    transition: all .2s ease-in-out;
+    width: 100px;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 5px;
+}
+.landing-buttons:hover{
+    transform: scale(1.1);
+    /*opacity: 1.0;*/
+
+}
+.landing-buttons strong{
+    text-align: center;
+    font-size: 1.2rem;
+}
 .btns, .contact{
     text-align: center;
+}
+.pics .row {margin-bottom: 10px;}
+.pics .entry{
+    transition: all .1s ease-in-out;
+    border: solid #ffffff 5px;
+}
+.pics .entry:hover{
+    transform: scale(1.1) rotate(-2deg);
+
+}
+
+@media all and (max-width: 600px)  {
+    .landing h1{
+        font-size: 3rem;
+    }
+    .main p{
+        font-size: 1rem;
+    }
 }
