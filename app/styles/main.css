@@ -33,14 +33,33 @@ body{
 .shoplist-header{
     margin-left: 10%;
 }
+/*landing stuff*/
+.landing {
+    background: url(../images/me.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
 .landing{
     padding: 5%;
+    text-align: right;
+    /*background-image: url("../images/me.png");*/
+    /*background-size: cover;*/
+    color: #008CBA;
 }
 .landing h1{
     font-size: 6em;
+    color: lightyellow;
+}
+section.pics{
+    border-top: solid 1px lightyellow;
+    padding-top: 5%;
+    background-image: url("../images/patterns/pw_maze_black.png");
 }
 
+/*Main footer*/
 .main-footer{
     /*position: fixed;*/
     bottom: 0;
