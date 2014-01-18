@@ -7,6 +7,7 @@ angular.module('portfoolioApp', [
   'ngSanitize',
 #  'ngRoute',
   'shopsService',
+  'publicationsService',
   'skillsService'
 ])
   .config ($routeProvider) ->
@@ -23,6 +24,9 @@ angular.module('portfoolioApp', [
       .when '/landing',
         templateUrl: 'views/landing.html',
         controller: 'LandingCtrl'
+      .when '/publications',
+        templateUrl: 'views/publications.html'
+        controller: 'PublicationsCtrl'
       .otherwise
         redirectTo: '/'
   .run( ($rootScope) ->

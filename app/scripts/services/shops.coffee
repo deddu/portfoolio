@@ -5,3 +5,7 @@ angular.module('shopsService', ['ngResource'])
   return $resource('./data/shops.json');
   )
 
+angular.module('publicationsService', ['ngResource'])
+.factory('PublicationsService', ($resource) ->
+    return $resource('./data/publications.json');
+  )

@@ -88,7 +88,6 @@ footer a {
 .landing-buttons:hover{
     transform: scale(1.1);
     /*opacity: 1.0;*/
-
 }
 .landing-buttons strong{
     text-align: center;
@@ -102,9 +101,41 @@ footer a {
     transition: all .1s ease-in-out;
     border: solid #ffffff 5px;
 }
+.entry-sm, .entry-lg{
+    height: 100px;
+}
+.entry-sm{
+    width: 40%;
+    background-image: url("../images/aa.png");
+    color: #f5f5f5;
+}
+.entry-lg{
+    width: 60%;
+    background-image: url("../images/ice.png");
+    color: #f5f5f5;
+}
+.entry p{
+    transition: all .2s ease-in-out;
+    font-family: "Bookman", Georgia, "Times New Roman", serif;
+    font-size: 2rem;
+    text-shadow: 1px 0px 1px white;
+    text-shadow: -1px 0px 1px black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.0
+}
+.entry p:hover{
+    opacity: 1;
+}
 .pics .entry:hover{
-    transform: scale(1.1) rotate(-2deg);
-
+    transform: scale(1.1);
+}
+/*publications*/
+.publicatnis ul{
+    padding: 5% 10% 0%;
+    font-family: "Bookman", Georgia, "Times New Roman", serif;
+    font-size: 1.2rem;
+    list-style-type: none;
 }
 
 @media all and (max-width: 600px)  {
