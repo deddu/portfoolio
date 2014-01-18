@@ -1,0 +1,169 @@
+/* 
+ * CaptionSS 1.0.0
+ * a pure-CSS image caption library
+ */
+
+/*** Base Caption Styles ***/
+figure.embed,
+figure.embed-top,
+figure.overlay {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	margin: 0em;
+	color: rgba(50,50,50,1.0);
+	font-size: 0.8em;
+	background: white;
+	overflow: hidden;
+}
+figure.embed img,
+figure.embed-top img,
+figure.overlay img {
+	width: 100%;
+	display: block;
+}
+figure.embed figcaption,
+figure.embed-top figcaption,
+figure.overlay figcaption {
+	width: 100%;
+	padding: 0.5em;
+}
+
+/* use border-box box-sizing for each type of caption */
+figure.embed *,
+figure.embed-top *,
+figure.overlay * {
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*** Embed ***/
+/* Positioning: bottom (default) */
+/* Effects: static (default) */
+/* Font-size: normal (default) */
+/* Theme: neutral (default) */
+
+figure.embed {
+	/* do nothing here */
+}
+figure.embed figcaption {
+	/* positioning: bottom */
+	position: absolute;
+	bottom: 0px;
+	/* theme: neutral */
+	background: rgba(200,200,200,0.7);
+}
+
+/*** Embed-Top ***/
+
+figure.embed-top {
+	/* do nothing here */
+}
+figure.embed-top figcaption {
+	/* positioning: top */
+	position: absolute;
+	top: 0px;
+	/* theme: neutral */
+	background: rgba(200,200,200,0.7);
+}
+
+/*** Overlay ***/
+
+figure.overlay {
+
+}
+figure.overlay figcaption {
+	/* positioning: over */
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	/* theme: neutral */
+	background: rgba(200,200,200,0.7);
+	/* effect: hide by default */
+	opacity: 0;
+}
+figure.overlay:hover figcaption {
+	/* effect: show */
+	opacity: 1;
+}
+
+/*** Themes ***/
+/* neutral theme: gray with black text */
+figure figcaption {
+	color: rgba(50,50,50,1.0);
+	background: rgba(200,200,200,0.7);
+}
+/* light theme: white with gray text */
+figure.light figcaption {
+	color: rgba(80,80,80,1.0);
+	background: rgba(245,245,245,0.7);
+}
+/* dark theme: black with white text */
+figure.dark figcaption {
+	color: rgba(245,245,245,1.0);
+	background: rgba(50,50,50,0.7);
+}
+
+/*** Font Sizes ***/
+/* normal (small) */
+figure {
+	font-size: 0.8em;
+}
+/* medium */
+figure.medium {
+	font-size: 1.0em;
+}
+figure.large {
+	font-size: 1.2em;
+}
+figure.xlarge {
+	font-size: 1.5em;
+}
+
+/*** Effects and Animations ***/
+/* hide */
+figure.hide figcaption {
+	opacity: 1;
+}
+figure.hide:hover figcaption {
+	opacity: 0;
+}
+/* hide-smooth */
+figure.hide-smooth figcaption {
+	opacity: 1;
+	-webkit-transition: opacity .5s;
+	-moz-transition: opacity .5s;
+	-o-transition: opacity .5s;
+	transition: opacity .5s;
+}
+figure.hide-smooth:hover figcaption {
+	opacity: 0;
+	-webkit-transition: opacity .5s;
+	-moz-transition: opacity .5s;
+	-o-transition: opacity .5s;
+	transition: opacity .5s;
+}
+/* reveal */
+figure.reveal figcaption {
+	opacity: 0;
+}
+figure.reveal:hover figcaption {
+	opacity: 1;
+}
+/* reveal-smooth */
+figure.reveal-smooth figcaption {
+	opacity: 0;
+	-webkit-transition: opacity .5s;
+	-moz-transition: opacity .5s;
+	-o-transition: opacity .5s;
+	transition: opacity .5s;
+}
+figure.reveal-smooth:hover figcaption {
+	opacity: 1;
+	-webkit-transition: opacity .5s;
+	-moz-transition: opacity .5s;
+	-o-transition: opacity .5s;
+	transition: opacity .5s;
+}
