@@ -60,8 +60,7 @@ section.pics{
     /*position: fixed;*/
     bottom: 0;
     width: 100%;
-    color: #000000;
-    background-color: #eee;
+    color: darkgray;
     padding: 5px 0px;
 }
 footer{
@@ -70,6 +69,7 @@ footer{
 }
 footer a {
     text-decoration: none;
+    color: #006887;
 }
 .main p{
     font-family: "Bookman", Georgia, "Times New Roman", serif;

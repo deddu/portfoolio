@@ -230,7 +230,7 @@ module.exports = function (grunt) {
             'bower_components/**/*',
             'images/{,*/}*.{gif,png,webp}',
             'styles/fonts/*',
-            'data/*.json',
+            'data/*.{json,pdf}',
             'CNAME'
           ]
         }, {
