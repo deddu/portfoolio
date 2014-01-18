@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="styles/main.css">
 
 </head>
-  <body ng-app="portfoolioApp">
+  <body ng-app="portfoolioApp" ng-controller="LandingCtrl">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -46,9 +46,9 @@
 
             <!-- Left Nav Section -->
             <ul class="left">
-                <li><a href="/#/portfolio">Portfolio</a></li>
+                <li><a ng-click="gotoportfolio()">Portfolio</a></li>
                 <li><a href="/#/publications">Publications</a></li>
-                <li><a href="/#/knowhow">Skills</a></li>
+                <li><a ng-click="gotoknowhow()">Skills</a></li>
                 <!--<li><a href="/#/publications">Publications</a></li>-->
                 <li><a href="http://www.dedd.us">Blog</a></li>
             </ul>
@@ -71,6 +71,7 @@
     <script src="bower_components/jquery-knob/js/jquery.knob.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
+
 
     <!--<script>-->
         <!--$(document).foundation();-->
