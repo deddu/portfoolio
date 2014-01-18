@@ -125,7 +125,8 @@ footer a {
 }
 .entry-sm{
     width: 40%;
-    background-image: url("../images/aa.png");
+    background-image: url("../images/chematicanet.png");
+    background-position: -420px -450px;
     color: #f5f5f5;
 }
 .entry-lg{
@@ -155,6 +156,16 @@ footer a {
     font-family: "Bookman", Georgia, "Times New Roman", serif;
     font-size: 1.2rem;
     list-style-type: none;
+}
+.portfolio{
+    background: url("../images/patterns/escheresque_ste.png");
+}
+.knowhow{
+    background: url("../images/patterns/project_papper.png");
+}
+.landing-footer{
+    padding-top: 5%;
+    background: url("../images/patterns/binding_dark.png");
 }
 
 @media all and (max-width: 600px)  {

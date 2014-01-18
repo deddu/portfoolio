@@ -36,14 +36,7 @@
     <!--<br/>-->
     <!--<img width="80px" src="../images/icons/icon_20733.svg" onerror="this.onerror=null; this.src='../images/icons/icon_20733.png'">-->
 </section>
-<!--<section>-->
-<!--<div class="btns">-->
-<!--<span ><a class="button" href="/#/portfolio" > portfolio</a></span>-->
-<!--<span ><a class="button" href="/#/knowhow" > skills</a></span>-->
-<!--<span ><a class="button" href="http://www.dedd.us" > blog</a></span>-->
-<!--</div>-->
 
-<!--</section>-->
 <section class="pics">
     <div class="row">
         <div class="small-8 large-8 columns entry entry-lg">
@@ -68,3 +61,70 @@
     </div>
 
 </section>
+
+<section class="portfolio" ng-controller="MainCtrl">
+    <div>
+        <section class="appcontainer">
+            <!--<header>Deddu's PortFolio</header>-->
+            <a href="{{link.url}}"><img src="{{link.thumbnail}}" alt="{{link.name}}"/></a>
+            <p>{{link.description}}</p>
+            <span class="arrow-right"><a class="button" ng-click="gimmePrev()"><i class="fa fa-chevron-left"></i></a></span>
+            <span class="arrow-right"><a class="button" ng-click="gimmeOne()"><i class="fa fa-random"></i></a></span>
+            <span class="arrow-right"><a class="button" ng-click="gimmeNext()"><i class="fa fa-chevron-right"></i></a></span>
+            <br>
+            <a class="button success" href="{{link.url}}">Go to {{link.name}}</a>
+        </section>
+        <section>
+            <div class="shoplist">
+                <ul  class="small-block-grid-2 medium-block-grid-4 large-block-grid-8">
+                    <li ng-repeat="shop in shops" class="shop">
+
+                        <a href="{{shop.url}}">
+                            <img src="{{shop.thumbnail}}" alt="{{shop.name}}"/>
+                            <p class="button secondary small">{{shop.name}}</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+</section>
+
+
+<section class="knowhow" ng-controller="KnowhowCtrl">
+    <header>KnowHow:</header>
+    <div class="shoplist">
+        <dl class="sub-nav">
+            <dt>Field: </dt>
+            <dd ng-repeat="fil in catfields" ng-class="is_selected(fil,catselected)"><a ng-click="toggle_selected(fil,catselected)">{{fil}}</a></dd>
+        </dl>
+        <dl class="sub-nav">
+            <dt>Category: </dt>
+            <dd ng-repeat="fil in typefields" ng-class="is_selected(fil,typeselected)" ><a ng-click="toggle_selected(fil,typeselected)">{{fil}}</a></dd>
+        </dl>
+
+        <ul  class="small-block-grid-2 medium-block-grid-4 large-block-grid-8">
+            <li ng-repeat="skill in skills|filter:matchCategory|filter:matchType" class="shop">
+                <knob value="{{skill.level}}" knob-data="{{skill.level}}" knob-max="10" knob-options="knobOptions"></knob>
+                <!--<p><span ng-repeat="i in range(skill.level)"><i class="fa fa-star" ng-style="{color:getColor(skill.type)}"></i></span></p>-->
+
+                <span class="button secondary small">{{skill.name}}</span>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="landing-footer">
+    <div class="btns">
+    <span ><a class="button" href="/#/portfolio" > portfolio</a></span>
+    <span ><a class="button" href="/#/knowhow" > skills</a></span>
+    <span ><a class="button" href="http://www.dedd.us" > blog</a></span>
+    <span><a class="button" href="https://github.com/deddu"><i class="fa fa-github"></i></a></span>
+    <span><a class="button" href="http://www.linkedin.com/in/deddu"><i class="fa fa-linkedin"></i></a></span>
+    <span><a class="button" href="skype:mrernia?call"><i class="fa fa-skype"></i></a></span>
+    <span><a class="button" href="mailto:cadedduan@gmail.com"><i class="fa fa-envelope"></i></a></span>
+    </div>
+
+</section>
+
