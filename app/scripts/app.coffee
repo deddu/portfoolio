@@ -15,15 +15,15 @@ angular.module('portfoolioApp', [
       .when '/',
         templateUrl: 'views/landing.html'
         controller: 'MainCtrl'
-      .when '/portfolio',
-          templateUrl: 'views/main.html',
-          controller: 'MainCtrl'
-      .when '/knowhow',
-        templateUrl: 'views/knowhow.html',
-        controller: 'KnowhowCtrl'
-      .when '/landing',
-        templateUrl: 'views/landing.html',
-        controller: 'LandingCtrl'
+#      .when '/portfolio',
+#          templateUrl: 'views/main.html',
+#          controller: 'MainCtrl'
+#      .when '/knowhow',
+#        templateUrl: 'views/knowhow.html',
+#        controller: 'KnowhowCtrl'
+#      .when '/landing',
+#        templateUrl: 'views/landing.html',
+#        controller: 'LandingCtrl'
       .when '/publications',
         templateUrl: 'views/publications.html'
         controller: 'PublicationsCtrl'
