@@ -36,6 +36,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    height: 100%;
 }
 
 .landing{
@@ -176,5 +177,32 @@ footer a {
     }
     .main p{
         font-size: 1rem;
+    }
+}
+
+/*fixes for bg in ipads and iphones. (that's a huge market share)*/
+
+/*IPADS portrait and landscape*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+    .landing{
+        background: url(../images/me.png) no-repeat center center;
+    }
+}
+/*IPHONE5 portrait and landscape*/
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+    .landing{
+        background: url(../images/me.png) no-repeat center center;
+    }
+}
+/*Iphone2-4 portrait and landscape*/
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+    .landing{
+        background: url(../images/me.png) no-repeat center center;
     }
 }
