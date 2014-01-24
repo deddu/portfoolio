@@ -81,7 +81,8 @@
         "level":6,
         "category":"code",
         "type":"CSS framework",
-        "description":""
+        "description":"",
+        "href":"http://getbootstrap.com/"
     },
     {
         "name":"Foundation",
@@ -89,6 +90,14 @@
         "category":"code",
         "type":"CSS framework",
         "description":""
+    },
+    {
+        "name":"Skeleton",
+        "level":4,
+        "category":"code",
+        "type":"CSS framework",
+        "description":"",
+        "href":"http://www.getskeleton.com/"
     },
     {
         "name":"Backbone.js",
@@ -158,7 +167,8 @@
         "level":4,
         "category":"code",
         "type":"CSS",
-        "description":""
+        "description":"",
+        "href":"http://sass-lang.com/"
     },
     {
         "name":"Machine Learning",

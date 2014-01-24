@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Inconsolata);
 
 .shoplist{
     padding: 20px;
@@ -34,12 +35,12 @@
     text-align: right;
 }
 .landing p{
-
     color: lightgrey ;
     color: transparent;
     text-shadow: rgba(255,255,255,0.5) 0px 3px 1px;
 }
 .landing h1{
+
     font-size: 6em;
     color: transparent;
     text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
