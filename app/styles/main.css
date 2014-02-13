@@ -51,6 +51,15 @@ section.pics{
     background-image: url("../images/patterns/pw_maze_black.png");
 }
 
+.animate-enter {
+    -webkit-transition: 1s linear all; /* Chrome */
+    transition: 1s linear all;
+    opacity: 0;
+}
+
+.animate-enter.animate-enter-active {
+    opacity: 1;
+}
 /*Main footer*/
 .main-footer{
     bottom: 0;
