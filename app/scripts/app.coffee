@@ -5,7 +5,8 @@ angular.module('portfoolioApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-#  'ngRoute',
+  'ngRoute',
+  'ngAnimate',
   'shopsService',
   'publicationsService',
   'skillsService'
