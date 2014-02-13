@@ -3,13 +3,13 @@
         "name":"Chematica",
         "url":"http://www.chematica.net",
         "thumbnail":"../images/chematicanet.png",
-        "description":"Northwestern University automation of retrosynthesis"
+        "description":"Northwestern University automation of retrosynthesis. Bootstrap 3, d3js "
     },
     {
         "name":"DomTree",
         "url":"http://www.domtree.net",
         "thumbnail":"../images/domtree.png",
-        "description":"Visualize the DOM structure of a webpage"
+        "description":"Visualize the DOM structure of a webpage. Bootstrap 3,Angular.js, Node.js, Heroku"
     },
     {
         "name":"Dthrees",
@@ -21,6 +21,19 @@
         "name":"ChristmasRoulette",
         "url":"https://dl.dropboxusercontent.com/u/7879780/christmasroulette/index.html#/",
         "thumbnail":"../images/christmasroulette.png",
-        "description":"For the ones that have no ideas for this christmas"
+        "description":"For the ones that have no ideas for this christmas.  Zurb Foundation 5, Angular.js"
+    },
+    {
+        "name":"Corinna",
+        "url":"https://dl.dropboxusercontent.com/u/7879780/coco/index.html",
+        "thumbnail":"../images/coco.png",
+        "description":"A simple page for personal cv - in progress. Skeleton, Sass"
+    },
+    {
+        "name":"Logic Memory Center",
+        "url":"https://dl.dropboxusercontent.com/u/7879780/lmc/index.html",
+        "thumbnail":"../images/logicmemorycenter.png",
+        "description":"Reproducing one of the most beautiful design pieces from 2001:a space odissey. Sass, Bourbon, Neat"
     }
+
 ]
