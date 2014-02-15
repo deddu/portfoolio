@@ -10,6 +10,7 @@
 module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt);
   require('time-grunt')(grunt);
+  grunt.loadNpmTasks('grunt-contrib-compass');
 
   grunt.initConfig({
     yeoman: {
@@ -30,17 +31,21 @@ module.exports = function (grunt) {
         files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
         tasks: ['copy:styles', 'autoprefixer']
       },
+      compass: {
+               files: ['<%=yeoman.app %>/sass/{,*/}*.scss'],
+               tasks: ['compass','copy:styles','autoprefixer']
+      },
       livereload: {
         options: {
           livereload: '<%= connect.options.livereload %>'
         },
         files: [
           '<%= yeoman.app %>/{,*/}*.html',
-          '.tmp/styles/{,*/}*.css',
+          '{.tmp,<%= yeoman.app %>}/styles/{,*/}*.css',
           '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
           '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
         ]
-      }
+       }
     },
     autoprefixer: {
       options: ['last 1 version'],
@@ -129,7 +134,21 @@ module.exports = function (grunt) {
           dest: '.tmp/spec',
           ext: '.js'
         }]
-      }
+      }},
+      compass: {                  // Task
+            dist: {                   // Target
+                options: {              // Target options
+                    sassDir: '<%= yeoman.app %>/sass',
+                    cssDir: '<%=yeoman.app %>/styles',
+                    environment: 'production'
+                }
+            },
+            dev: {                    // Another target
+                options: {
+                    sassDir: '<%= yeoman.app %>/sass',
+                    cssDir: '<%=yeoman.app %>/styles',
+                }
+            }
     },
     // not used since Uglify task does concat,
     // but still available if needed
@@ -297,7 +316,6 @@ module.exports = function (grunt) {
       }
     }
   });
-
   grunt.registerTask('server', function (target) {
     if (target === 'dist') {
       return grunt.task.run(['build', 'connect:dist:keepalive']);
@@ -305,6 +323,7 @@ module.exports = function (grunt) {
 
     grunt.task.run([
       'clean:server',
+      'compass',
       'concurrent:server',
       'autoprefixer',
       'connect:livereload',
