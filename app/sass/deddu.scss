@@ -1,3 +1,12 @@
+@import "compass";
+@import "compass/css3/transform";
+
+$myblue : blue;
+$mywhite:#f5f5f5;
+$me:url(../images/me.png);
+$serif:"museo","Bookman", Georgia, "Times New Roman", serif;
+$sansserif: "proxima-nova","Helvetica-Neue","Helvetica","Arial", sans-serif;
+
 .shoplist{
   padding: 20px;
   text-align: center;
@@ -10,68 +19,45 @@
   text-align: center;
    p {
     margin-top: -5%;
-    font-family: Garamond, Times New Roman, Times, serif;
-    color: #f5f5f5;
+    font-family: $serif;
+    color: $mywhite;
     font-size: 2em;
   }
   img{
     max-width: 60%;
   }
 }
-
+#mynav a{
+  font-family: $sansserif;
+}
 /*landing stuff*/
 .landing {
-  background: url(../images/me.png) no-repeat center center fixed;
+
+  background: $me no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 100%;
-}
-.landing{
   padding: 5%;
   text-align: right;
+  p{
+    color: lightgrey ;
+    color: transparent;
+    @include text-shadow( rgba(255,255,255,0.5) 0px 3px 1px);
+  }
+  h1{
+    font-family: "atrament-web", $sansserif;
+    font-size: 6em;
+    color: transparent;
+    @include text-shadow(rgba(255,255,255,0.5) 0px 3px 3px);
+  }
 }
-.landing p{
-  color: lightgrey ;
-  color: transparent;
-  text-shadow: rgba(255,255,255,0.5) 0px 3px 1px;
-}
-.landing h1{
 
-  font-size: 6em;
-  color: transparent;
-  text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
-}
 section.pics{
   border-top: solid 1px lightyellow;
   padding: 5% 1%;
   background-image: url("../images/patterns/pw_maze_black.png");
-}
-.animate-enter,
-.animate-leave
-{
-  -webkit-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-  -moz-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-  -ms-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-  -o-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-  transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-  position: relative;
-  display: block;
-}
-
-.animate-enter.animate-enter-active,
-.animate-leave {
-  opacity: 1;
-  top: 0;
-  height: 30px;
-}
-
-.animate-leave.animate-leave-active,
-.animate-enter {
-  opacity: 0;
-  top: -50px;
-  height: 0px;
 }
 
 /*Main footer*/
@@ -84,13 +70,13 @@ section.pics{
 footer{
   font-size: 12px;
   text-align: center;
-}
-footer a {
-  text-decoration: none;
-  color: #006887;
+  a {
+    text-decoration: none;
+    color: #006887;
+  }
 }
 .main p{
-  font-family: "Bookman", Georgia, "Times New Roman", serif;
+  font-family: $serif;
   font-size: 1.5rem;
 }
 .cv {
@@ -98,10 +84,7 @@ footer a {
   width: 100%;
   background-color: rgba(255,255,255,0.5);
   text-align: center;
-  margin-top: -40px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 20px;
+  margin:-40px auto 20px auto;
   border-radius: 30px;
 }
 .landing-buttons{
@@ -111,15 +94,16 @@ footer a {
   padding: 10px;
   border-radius: 15px;
   margin: 5px;
+  &:hover{
+    @include transform( scale(1.1));
+    /*opacity: 1.0;*/
+  }
+  strong{
+    text-align: center;
+    font-size: 1.2rem;
+  }
 }
-.landing-buttons:hover{
-  transform: scale(1.1);
-  /*opacity: 1.0;*/
-}
-.landing-buttons strong{
-  text-align: center;
-  font-size: 1.2rem;
-}
+
 .btns, .contact{
   text-align: center;
 }
@@ -154,7 +138,7 @@ footer a {
 }
 .entry p{
   transition: all .2s ease-in-out;
-  font-family: "Bookman", Georgia, "Times New Roman", serif;
+  font-family: $serif;
   font-size: 2rem;
   text-shadow: 1px 0px 1px white;
   text-shadow: -1px 0px 1px black;
@@ -171,7 +155,7 @@ footer a {
 /*publications*/
 .publicatnis ul{
   padding: 5% 10% 0%;
-  font-family: "Bookman", Georgia, "Times New Roman", serif;
+  font-family: $serif;
   font-size: 1.2rem;
   list-style-type: none;
 }

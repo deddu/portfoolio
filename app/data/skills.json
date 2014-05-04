@@ -22,7 +22,7 @@
     },
     {
         "name":"C",
-        "level":6,
+        "level":5,
         "category":"code",
         "type":"Programming Language",
         "description":"I know my way around"
@@ -101,7 +101,7 @@
     },
     {
         "name":"Backbone.js",
-        "level":5,
+        "level":4,
         "type":"JS framework",
         "category":"code",
         "description":""
@@ -135,6 +135,20 @@
         "description":""
     },
     {
+        "name":"Clojure",
+        "level":3,
+        "category":"code",
+        "type":"Programming Language",
+        "description":""
+    },
+    {
+        "name":"Ruby",
+        "level":2,
+        "category":"code",
+        "type":"Programming Language",
+        "description":""
+    },
+    {
         "name":"MongoDB",
         "level":5,
         "category":"code",
@@ -150,7 +164,7 @@
     },
     {
         "name":"SQL",
-        "level":1,
+        "level":2,
         "category":"code",
         "type":"db",
         "description":""
