@@ -41,6 +41,7 @@ $sansserif: "proxima-nova","Helvetica-Neue","Helvetica","Arial", sans-serif;
   height: 100%;
   padding: 5%;
   text-align: right;
+  min-height: 500px;
   p{
     color: lightgrey ;
     color: transparent;
@@ -52,12 +53,27 @@ $sansserif: "proxima-nova","Helvetica-Neue","Helvetica","Arial", sans-serif;
     color: transparent;
     @include text-shadow(rgba(255,255,255,0.5) 0px 3px 3px);
   }
+  h2{
+    font-family: "atrament-web", $sansserif;
+    font-size: 3em;
+    color: transparent;
+    @include text-shadow(rgba(255,255,255,0.5) 0px 3px 3px);
+  }
 }
 
-section.pics{
-  border-top: solid 1px lightyellow;
-  padding: 5% 1%;
-  background-image: url("../images/patterns/pw_maze_black.png");
+section#cta{
+  min-height: 150px;
+   background-image: url("../images/patterns/pw_maze_black.png");
+   border-top:solid 1px lightgoldenrodyellow;
+  border-bottom:solid 1px lightgoldenrodyellow;
+
+  .fixheight150.button{
+    min-height: 150px;
+  }
+  .fixheight150 span{
+    display: block;
+  }
+
 }
 
 /*Main footer*/
@@ -114,19 +130,6 @@ footer{
 }
 .entry-sm, .entry-lg{
   height: 100px;
-}
-.entry-aa{
-  background-image: url("../images/aa.png");
-  background-size: cover;
-}
-.entry-ice{
-  background-image: url("../images/ice.png");
-}
-.entry-desk{
-  background-image: url("../images/patterns/cubes.png");
-}
-.entry-mic{
-  background-image: url("../images/patterns/wild_oliva.png");
 }
 .entry-sm{
   width: 40%;

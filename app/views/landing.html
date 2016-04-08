@@ -1,131 +1,47 @@
-
-
 <section class="landing">
-<header>
-    <h1 class="spacefeel">ANDREA CADEDDU - SPACE EXPLORER</h1>
-
-</header>
-<div class="row">
+    <header>
+        <h1 class="spacefeel">ANDREA CADEDDU    </h1>
+        <h2>dad, developer, scholar</h2>
+    </header>
+    <div class="row">
         <div class="small-12 medium-8 large-6 columns main pull-right">
-            <p>I'm a Full-Stack Software Developer and Material Scientist, currently developing for Hyatt Hotels.</p>
-            <p>I love coding, science, and nice typography.</p>
-            <p>I've joined the hospitality industry after many years of Academia, and finally my work
-                is my hobby. And now I can enjoy research in my spare time. Such as developing
-            automated retrosynthetic analysis.</p>
-             <div class="small-2 large-12 columns landing-buttons">
-                 <a  href="mailto:cadedduan@gmail.com">
-                     <i class="fa fa-envelope-o fa-5x"></i>
-                 </a>
-                 <strong class="text-center"> E-Mail</strong>
-             </div>
-            <div class="small-2 medium-12 large-12 columns landing-buttons">
-                <a href="../data/20140117-cv.pdf">
-                    <span class="fa-stack fa-3x">
-                    <i class="fa fa-file-o fa-stack-2x"></i>
-                    <i class="fa fa-bar-chart-o fa-rotate-90 fa-stack-1x"></i>
-                    </span>
-                </a>
-                <strong class="text-center"> Resume</strong>
-            </div>
-
+            <p>I'm a Full-Stack Software Developer and Material Scientist, currently developing for Turing Group.</p>
         </div>
-</div>
-
-
+    </div>
     <!--<div class="contact"></div>-->
     <!--&lt;!&ndash;<div class="cv"><img src="../images/cv-01.png" alt="cv"/></div>&ndash;&gt;-->
     <!--<br/>-->
     <!--<img width="80px" src="../images/icons/icon_20733.svg" onerror="this.onerror=null; this.src='../images/icons/icon_20733.png'">-->
 </section>
-
-<section class="pics">
-    <div class="row">
-        <div class="small-8 large-8 columns entry entry-lg entry-ice">
-            <!--<img class="" src="../images/ice.png" alt="placeholder">-->
-            <!--<p>Portfolio</p>-->
-        </div>
-        <div class="small-4 large-4 columns entry entry-sm entry-desk">
-            <!--<img class="" src="../images/aa.png" alt="placeholder">-->
-            <!--<p>Publications</p>-->
-        </div>
+<section id="cta">
+<div class="row">
+    <div class="column button secondary small-3 fixheight150">
+        <a href="https://github.com/deddu">
+            <i class="fa fa-github fa-5x"></i>
+        </a>
+        <div class="text-center"> Github</div>
     </div>
-    <div class="row">
-        <div class="small-4 large-4 columns entry entry-sm entry-mic">
-            <!--<img class="" src="../images/aa.png" alt="placeholder">-->
-            <p></p>
-        </div>
-        <div class="small-8 large-8 columns entry entry-lg entry-aa">
-            <!--<img class="" src="../images/ice.png" alt="placeholder">-->
-            <p></p>
-        </div>
-
+    <div class="column small-3 button secondary fixheight150">
+        <a href="../data/latest-cv.pdf">
+            <i class="fa fa-file-text fa-5x"></i>
+        </a>
+        <div class="text-center"> Resume</div>
+    </div>
+    <div class="column button secondary small-3 fixheight150">
+        <a href="http://www.linkedin.com/in/deddu">
+            <i class="fa fa-linkedin fa-5x"></i>
+        </a>
+        <div class="text-center"> Linkedin</div>
     </div>
 
-</section>
-
-<section id="portfolio" class="portfolio" ng-controller="MainCtrl" data-bottom-top="background-position:0px 0px" data-top-bottom="background-position:0px -250px;">
-    <div>
-        <section class="appcontainer">
-            <!--<header>Deddu's PortFolio</header>-->
-            <a href="{{link.url}}" ng-animate="'animate'"><img src="{{link.thumbnail}}" alt="{{link.name}}"/></a>
-            <p>{{link.description}}</p>
-            <span class="arrow-right"><a class="button" ng-click="gimmePrev()"><i class="fa fa-chevron-left"></i></a></span>
-            <span class="arrow-right"><a class="button" ng-click="gimmeOne()"><i class="fa fa-random"></i></a></span>
-            <span class="arrow-right"><a class="button" ng-click="gimmeNext()"><i class="fa fa-chevron-right"></i></a></span>
-            <br>
-            <a class="button success" href="{{link.url}}">Go to {{link.name}}</a>
-        </section>
-        <section>
-            <div class="shoplist">
-                <ul  class="small-block-grid-2 medium-block-grid-4 large-block-grid-8">
-                    <li ng-repeat="shop in shops" class="shop">
-
-                        <a href="{{shop.url}}">
-                            <img src="{{shop.thumbnail}}" alt="{{shop.name}}"/>
-                            <p class="button secondary small">{{shop.name}}</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
+    <div class="column button secondary small-3 fixheight150">
+        <a href="http://codepen.io/deddu/">
+            <i class="fa fa-codepen fa-5x"></i>
+        </a>
+        <div class="text-center"> Codepen </div>
     </div>
 
-</section>
 
-
-<section id="knowhow" class="knowhow" ng-controller="KnowhowCtrl">
-    <div class="shoplist">
-        <dl class="sub-nav">
-            <dt>Field: </dt>
-            <dd ng-repeat="fil in catfields" ng-class="is_selected(fil,catselected)" ng-animate="'animate'"><a ng-click="toggle_selected(fil,catselected)">{{fil}}</a></dd>
-        </dl>
-        <dl class="sub-nav">
-            <dt>Category: </dt>
-            <dd ng-repeat="fil in typefields" ng-class="is_selected(fil,typeselected)" ng-animate="'animate'"><a ng-click="toggle_selected(fil,typeselected)">{{fil}}</a></dd>
-        </dl>
-
-        <ul  class="small-block-grid-2 medium-block-grid-4 large-block-grid-8" >
-            <li ng-repeat="skill in skills|filter:matchCategory|filter:matchType" class="shop" ng-animate="'animate'">
-                <knob value="{{skill.level}}" knob-data="{{skill.level}}" knob-max="10" knob-options="knobOptions"></knob>
-                <!--<p><span ng-repeat="i in range(skill.level)"><i class="fa fa-star" ng-style="{color:getColor(skill.type)}"></i></span></p>-->
-
-                <span class="button secondary small">{{skill.name}}</span>
-            </li>
-        </ul>
     </div>
-</section>
-<section class="landing-footer">
-    <div class="btns">
-    <span ><a class="button" ng-click="gotoportfolio()" > portfolio</a></span>
-    <span ><a class="button" ng-click="gotoknowhow()" > skills</a></span>
-    <span ><a class="button" href="http://www.dedd.us" > blog</a></span>
-    <span><a class="button" href="https://github.com/deddu"><i class="fa fa-github"></i></a></span>
-    <span><a class="button" href="http://www.linkedin.com/in/deddu"><i class="fa fa-linkedin"></i></a></span>
-    <span><a class="button" href="skype:mrernia?call"><i class="fa fa-skype"></i></a></span>
-    <span><a class="button" href="mailto:cadedduan@gmail.com"><i class="fa fa-envelope"></i></a></span>
-    </div>
-    <footer class="main-footer"> by <a href="http://www.dedd.us"> Andrea Cadeddu </a> 2014, cover picture by Pierre Morieux, background patterns from
-        <a href="http://subtlepatterns.com"></a>subtlepattern </footer>
 </section>
 
