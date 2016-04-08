@@ -1,13 +1,14 @@
 <section class="landing">
 <header>
-    <h1>Andrea Cadeddu</h1>
+    <h1 class="spacefeel">ANDREA CADEDDU - SPACE EXPLORER</h1>
 
 </header>
 <div class="row">
         <div class="small-12 medium-8 large-6 columns main pull-right">
-            <p>I'm a Full-Stack Software Engineer and Material Scientist, currently at Northwestern University.</p>
+            <p>I'm a Full-Stack Software Developer and Material Scientist, currently developing for Hyatt Hotels.</p>
             <p>I love coding, science, and nice typography.</p>
-            <p>After many years of Academia, I am finally merging my passion for coding with science, developing
+            <p>I've joined the hospitality industry after many years of Academia, and finally my work
+                is my hobby. And now I can enjoy research in my spare time. Such as developing
             automated retrosynthetic analysis.</p>
              <div class="small-2 large-12 columns landing-buttons">
                  <a href="mailto:cadedduan@gmail.com">
@@ -64,7 +65,7 @@
     <div>
         <section class="appcontainer">
             <!--<header>Deddu's PortFolio</header>-->
-            <a href="{{link.url}}"><img src="{{link.thumbnail}}" alt="{{link.name}}"></a>
+            <a href="{{link.url}}" ng-animate="'animate'"><img src="{{link.thumbnail}}" alt="{{link.name}}"></a>
             <p>{{link.description}}</p>
             <span class="arrow-right"><a class="button" ng-click="gimmePrev()"><i class="fa fa-chevron-left"></i></a></span>
             <span class="arrow-right"><a class="button" ng-click="gimmeOne()"><i class="fa fa-random"></i></a></span>
@@ -95,15 +96,15 @@
     <div class="shoplist">
         <dl class="sub-nav">
             <dt>Field: </dt>
-            <dd ng-repeat="fil in catfields" ng-class="is_selected(fil,catselected)"><a ng-click="toggle_selected(fil,catselected)">{{fil}}</a></dd>
+            <dd ng-repeat="fil in catfields" ng-class="is_selected(fil,catselected)" ng-animate="'animate'"><a ng-click="toggle_selected(fil,catselected)">{{fil}}</a></dd>
         </dl>
         <dl class="sub-nav">
             <dt>Category: </dt>
-            <dd ng-repeat="fil in typefields" ng-class="is_selected(fil,typeselected)"><a ng-click="toggle_selected(fil,typeselected)">{{fil}}</a></dd>
+            <dd ng-repeat="fil in typefields" ng-class="is_selected(fil,typeselected)" ng-animate="'animate'"><a ng-click="toggle_selected(fil,typeselected)">{{fil}}</a></dd>
         </dl>
 
         <ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-8">
-            <li ng-repeat="skill in skills|filter:matchCategory|filter:matchType" class="shop">
+            <li ng-repeat="skill in skills|filter:matchCategory|filter:matchType" class="shop" ng-animate="'animate'">
                 <knob value="{{skill.level}}" knob-data="{{skill.level}}" knob-max="10" knob-options="knobOptions"></knob>
                 <!--<p><span ng-repeat="i in range(skill.level)"><i class="fa fa-star" ng-style="{color:getColor(skill.type)}"></i></span></p>-->
 

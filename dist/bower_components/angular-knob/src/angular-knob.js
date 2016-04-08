@@ -1,9 +1,9 @@
 angular.module('ui.knob', [])
   .directive('knob', function () {
     return {
-      restrict: 'EACM',
-      template:  '<input />' ,
-      replace:true,
+      restrict: 'EA',
+      template: '<input value="{{ knob }}">'  ,
+      replace: true,
       scope: true,
       link: function (scope, elem, attrs) {
 
@@ -28,6 +28,8 @@ angular.module('ui.knob', [])
           }
           
           $elem = $(elem);
+          $elem.val(scope.knob);
+          $elem.change();
           $elem.knob(opts);
 
         };

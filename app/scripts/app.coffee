@@ -16,11 +16,11 @@ angular.module('portfoolioApp', [
       .when '/',
         templateUrl: 'views/landing.html'
         controller: 'MainCtrl'
-#      .when '/portfolio',
-#          templateUrl: 'views/main.html',
-#          controller: 'MainCtrl'
-#      .when '/knowhow',
-#        templateUrl: 'views/knowhow.html',
+     .when '/portfolio',
+         templateUrl: 'views/portfolio.html',
+         controller: 'MainCtrl'
+     .when '/skills',
+       templateUrl: 'views/skills.html',
 #        controller: 'KnowhowCtrl'
 #      .when '/landing',
 #        templateUrl: 'views/landing.html',

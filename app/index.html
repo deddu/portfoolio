@@ -12,9 +12,9 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
       <link rel="stylesheet" href="bower_components/foundation/css/normalize.css">
       <link rel="stylesheet" href="bower_components/foundation/css/foundation.css">
-      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"/>
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
         <!-- build:css(.tmp) styles/main.css -->
-        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/deddu.css">
         <!-- endbuild -->
       <script type="text/javascript" src="//use.typekit.net/maa8alv.js"></script>
       <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -30,7 +30,7 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <nav class="top-bar" data-topbar>
+    <nav class="top-bar" data-topbar id="mynav">
         <ul class="title-area">
             <li class="name">
                 <h1><a href="#">Dedd.us</a></h1>
@@ -43,21 +43,47 @@
             <ul class="right">
                 <li><a href="https://github.com/deddu"><i class="fa fa-github"></i></a></li>
                 <li><a href="http://www.linkedin.com/in/deddu"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="http://codepen.io/deddu/"><i class="fa fa-codepen"></i></a></li>
                 <li><a href="skype:mrernia?call"><i class="fa fa-skype"></i></a></li>
                 <li><a href="mailto:cadedduan@gmail.com"><i class="fa fa-envelope"></i></a></li>
             </ul>
 
             <!-- Left Nav Section -->
             <ul class="left">
-                <li><a ng-click="gotoportfolio()">Portfolio</a></li>
+                <li><a href="/#/portfolio">Portfolio</a></li>
                 <li><a href="/#/publications">Publications</a></li>
-                <li><a ng-click="gotoknowhow()">Skills</a></li>
+                <li><a href="/#/skills">Skills</a></li>
                 <!--<li><a href="/#/publications">Publications</a></li>-->
                 <li><a href="http://www.dedd.us">Blog</a></li>
             </ul>
         </section>
     </nav>
+
+
     <div class="container" ng-view="" ></div>
+
+
+<section class="landing-footer">
+    <div class="btns">
+        <span><a class="button" href="/#/portfolio" > portfolio</a></span>
+        <span><a class="button" href="/#/skills" > skills</a></span>
+        <span><a class="button" href="http://www.dedd.us" > blog</a></span>
+        <span><a class="button" href="https://github.com/deddu"><i class="fa fa-github"></i></a></span>
+        <span><a class="button" href="http://www.linkedin.com/in/deddu"><i class="fa fa-linkedin"></i></a></span>
+        <span><a class="button" href="skype:mrernia?call"><i class="fa fa-skype"></i></a></span>
+        <span><a class="button" href="mailto:cadedduan@gmail.com"><i class="fa fa-envelope"></i></a></span>
+    </div>
+    <footer class="main-footer">
+        <div> by <a href="http://www.dedd.us"> Andrea Cadeddu </a> 2014, cover picture by Pierre Morieux, background patterns from
+            <a href="http://subtlepatterns.com"></a>subtlepattern
+        </div>
+        <div>
+            last update april 2016
+        </div>
+    </footer>
+</section>
+
+
     <!--<footer class="main-footer"> by <a href="http://www.dedd.us"> Deddu </a> 2013, background-image by Yao Cheng </footer>-->
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>

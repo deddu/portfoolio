@@ -1,6 +1,6 @@
 {
   "name": "CaptionSS",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "authors": [
     "jbranchaud <jbranchaud@gmail.com>"
   ],
@@ -15,14 +15,13 @@
     "test",
     "tests"
   ],
-  "_release": "1.0.1",
+  "_release": "1.0.2",
   "_resolution": {
     "type": "version",
-    "tag": "v1.0.1",
-    "commit": "004ff15d65f58d158db5dddae6e8bb31cbf3fb0f"
+    "tag": "v1.0.2",
+    "commit": "0ea5a74abb584e0f0799fc5a84004e51232b4851"
   },
   "_source": "git://github.com/jbranchaud/captionss.git",
   "_target": "~1.0.1",
-  "_originalSource": "captionss",
-  "_direct": true
+  "_originalSource": "captionss"
 }

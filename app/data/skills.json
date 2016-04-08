@@ -7,6 +7,13 @@
         "description":"I know my way around"
     },
     {
+        "name":"Javascript",
+        "level":8,
+        "category":"code",
+        "type":"Programming Language",
+        "description":""
+    },
+    {
         "name":"Scala",
         "level":2,
         "category":"code",
@@ -15,14 +22,14 @@
     },
     {
         "name":"Haskell",
-        "level":2,
+        "level":3,
         "category":"code",
         "type":"Programming Language",
         "description":"I know my way around"
     },
     {
         "name":"C",
-        "level":6,
+        "level":5,
         "category":"code",
         "type":"Programming Language",
         "description":"I know my way around"
@@ -57,7 +64,7 @@
     },
     {
         "name":"CSS3",
-        "level":6,
+        "level":7,
         "category":"code",
         "type":"Programming Language",
         "description":""
@@ -75,6 +82,30 @@
         "category":"code",
         "type":"JS framework",
         "description":""
+    },
+    {
+        "name":"React",
+        "level":7,
+        "category":"code",
+        "type":"JS framework",
+        "description":"",
+        "href":"http://getbootstrap.com/"
+    },
+    {
+        "name":"Vagrant",
+        "level":7,
+        "category":"code",
+        "type":"virtualization",
+        "description":"",
+        "href":"http://vagrant.com/"
+    },
+    {
+        "name":"Docker",
+        "level":5,
+        "category":"code",
+        "type":"virtualization",
+        "description":"",
+        "href":"http://docker.com/"
     },
     {
         "name":"Bootstrap",
@@ -101,20 +132,13 @@
     },
     {
         "name":"Backbone.js",
-        "level":5,
+        "level":4,
         "type":"JS framework",
         "category":"code",
         "description":""
     },
     {
         "name":"CoffeeScript",
-        "level":7,
-        "category":"code",
-        "type":"Programming Language",
-        "description":""
-    },
-    {
-        "name":"Javascript",
         "level":7,
         "category":"code",
         "type":"Programming Language",
@@ -129,6 +153,20 @@
     },
     {
         "name":"Groovy",
+        "level":2,
+        "category":"code",
+        "type":"Programming Language",
+        "description":""
+    },
+    {
+        "name":"Clojure",
+        "level":5,
+        "category":"code",
+        "type":"Programming Language",
+        "description":""
+    },
+    {
+        "name":"Ruby",
         "level":2,
         "category":"code",
         "type":"Programming Language",
@@ -150,21 +188,21 @@
     },
     {
         "name":"SQL",
-        "level":1,
+        "level":4,
         "category":"code",
         "type":"db",
         "description":""
     },
     {
         "name":"jQuery",
-        "level":4,
+        "level":7,
         "category":"code",
         "type":"library",
         "description":""
     },
     {
         "name":"SASS",
-        "level":4,
+        "level":5,
         "category":"code",
         "type":"CSS",
         "description":"",

@@ -25,13 +25,13 @@
     },
     {
         "name":"Corinna",
-        "url":"https://dl.dropboxusercontent.com/u/7879780/lmc/index.html",
+        "url":"https://dl.dropboxusercontent.com/u/7879780/coco/index.html",
         "thumbnail":"../images/coco.png",
         "description":"A simple page for personal cv - in progress. Skeleton, Sass"
     },
     {
         "name":"Logic Memory Center",
-        "url":"https://dl.dropboxusercontent.com/u/7879780/coco/index.html",
+        "url":"https://dl.dropboxusercontent.com/u/7879780/lmc/index.html",
         "thumbnail":"../images/logicmemorycenter.png",
         "description":"Reproducing one of the most beautiful design pieces from 2001:a space odissey. Sass, Bourbon, Neat"
     }
